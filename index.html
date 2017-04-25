@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8"/>
-<title>いらすとや検索</title>
+<title>Canvas Draw sample</title>
 <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="./cvi_busy_lib.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -18,9 +18,6 @@ html, body{
 #mycanvas{
   border: 1px solid #333;
 }
-#result{
-  text-align: center;
-}
 </style>
 </head>
 <body>
@@ -29,10 +26,6 @@ html, body{
 
 <br/>
 <input type="button" value="reset" onClick="resetCanvas();"/>
-<input type="button" value="search" onClick="search();"/>
-
-<br/>
-<div id="result"></div>
 
 <script>
 //. 参考: https://gist.github.com/Cartman0/436459b9b85cfdd1ca9c
@@ -138,7 +131,6 @@ function resetCanvas(){
   ctx.fillStyle = "rgb( 255, 255, 255 )";
   ctx.fillRect( 0, 0, 400, 300 );
   ctx.stroke();
-  
 }
 </script>
 </body>
